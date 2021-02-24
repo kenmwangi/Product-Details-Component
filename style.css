@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --backgroundColor: #043b53;
+  --primaryColor: #bd7b45;
+  --textColor: #6a747d;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--backgroundColor);
+}
+.container {
+  background-color: white;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 25vh;
+  padding: 30px;
+  color: var(--backgroundColor);
+  border-radius: 8px;
+}
+.container h2 {
+  font-size: 19px;
+  margin: 10px 0;
+}
+.container p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.container p a {
+  /* text-decoration: none; */
+  font-size: 12px;
+  color: var(--backgroundColor);
+  font-weight: 600;
+}
+.form {
+  border: 1px solid #e1c3aa;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  /* display: grid; */
+  /* grid-template-rows: repeat(12, 1fr); */
+  /* grid-template-columns: repeat(12, 1fr); */
+}
+.form .radio-group {
+  padding: 10px;
+}
+.radio-group input {
+  margin-right: 4px;
+}
+.radio-group label {
+  margin-left: 70px;
+}
+.form a {
+  display: block;
+  color: var(--textColor);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px;
+}
+.btn {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 18px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: var(--primaryColor);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(189, 123, 69, 0.102);
+  margin-bottom: 22px;
+  transition: all 300ms ease-in-out;
+}
+.btn--primary:focus,
+.btn--primary:hover {
+  background-color: #ac6e3e;
+}
+.btn--secondary {
+  color: var(--primaryColor);
+  background-color: #fff;
+  border: 1px solid var(--primaryColor);
+  transition: all 300ms ease-in-out;
+}
+.btn--secondary:focus,
+.btn--secondary:hover {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
